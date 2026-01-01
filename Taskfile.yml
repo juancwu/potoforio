@@ -1,0 +1,29 @@
+version: '3'
+
+tasks:
+  build:
+    desc: 'Builds the application'
+    cmds:
+      - task: build-css
+      - task: build-go
+
+  build-css:
+    desc: 'Builds CSS with tailwind'
+    cmds:
+      - pnpm run tw:prod
+
+  build-go:
+    desc: 'Builds Go application'
+    cmds:
+      - go build -o ./build/potoforio .
+
+  clean:
+    desc: 'Cleans up build artifacts'
+    cmds:
+      - rm -f ./static/styles.css ./build/potoforio
+
+  run:
+    desc: 'Builds and runs the application'
+    cmds:
+      - task: build
+      - ./build/potoforio

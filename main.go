@@ -2,9 +2,11 @@ package main
 
 import (
 	"context"
+	"embed"
 	"fmt"
 	"html/template"
 	"io"
+	"io/fs"
 	"log"
 	"net/http"
 	"os"
@@ -12,11 +14,15 @@ import (
 	"syscall"
 	"time"
 
-	// "github.com/jackc/pgx/v5"
-	// "github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
+
+//go:embed static/*
+var embeddedFiles embed.FS
+
+//go:embed views/*.html
+var embeddedTemplates embed.FS
 
 type TemplateRenderer struct {
 	templates *template.Template
@@ -29,7 +35,7 @@ func main() {
 	// listen to SIGTERM and SIGINT (ctrl-c)
 	signal.Notify(sigChan, syscall.SIGTERM, syscall.SIGINT, os.Interrupt)
 
-	templates, err := template.New("").ParseGlob("views/*.html")
+	templates, err := template.ParseFS(embeddedTemplates, "views/*.html")
 	if err != nil {
 		log.Fatalf("Error initializing templates: %v", err)
 		os.Exit(1)
@@ -43,7 +49,12 @@ func main() {
 	// serve server in a goroutine, allow the code to listen to ctrl-c
 	go func() {
 		e.Use(middleware.Logger())
-		e.Static("/static", "static")
+
+		staticFiles, err := fs.Sub(embeddedFiles, "static")
+		if err != nil {
+			panic(err)
+		}
+		e.StaticFS("/static", staticFiles)
 
 		e.GET("/", renderPage)
 
