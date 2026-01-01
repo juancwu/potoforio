@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  potoforio:
+    build: .
+    environment:
+      - GO_ENV=development
+    networks:
+      default:
+        ipv4_address: 172.17.0.2
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.17.0.0/24
