@@ -1,7 +1,9 @@
-static/styles.css
 .env
 .env.*
 node_modules
 tmp
 build
 *.pem
+*_templ.go
+static/output.css
+dist/
