@@ -10,17 +10,18 @@ templ Index(d data.Page) {
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<meta name="description" content="Juan Wu software developer portfolio site"/>
 			<meta name="author" content="Juan Wu"/>
-			<meta name="keywords" content="software developer, fullstack developer, portfolio"/>
-			<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png"/>
-			<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png"/>
-			<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png"/>
-			<link rel="manifest" href="/static/site.webmanifest"/>
+			<meta name="keywords" content="software developer, fullstack developer, portfolio, arch linux, neovim"/>
+			<link rel="apple-touch-icon" sizes="180x180" href={ "/static/apple-touch-icon.png?v=" + AssetVerion }/>
+			<link rel="icon" type="image/png" sizes="32x32" href={ "/static/favicon-32x32.png?v=" + AssetVerion }/>
+			<link rel="icon" type="image/png" sizes="16x16" href={ "/static/favicon-16x16.png?v=" + AssetVerion }/>
+			<link rel="manifest" href={ "/static/site.webmanifest?v=" + AssetVerion }/>
 			<link rel="preconnect" href="https://fonts.googleapis.com"/>
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 			<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-			<link rel="stylesheet" href="/static/output.css"/>
-			<link rel="preload" fetchpriority="high" as="image" href="/static/touching-grass-pic.jpg" type="image/jpeg"/>
-			<link rel="preload" fetchpriority="high" as="image" href="/static/grid.svg" type="image/svg+xml"/>
+			<link rel="stylesheet" href={ "/static/output.css?v=" + AssetVerion }/>
+			<link rel="preload" fetchpriority="high" as="image" href={ "/static/touching-grass-pic.jpg?v=" + AssetVerion } type="image/jpeg"/>
+			<link rel="preload" fetchpriority="high" as="image" href={ "/static/grid.svg?v=" + AssetVerion } type="image/svg+xml"/>
+			<link rel="canonical" href="https://juancwu.dev"/>
 			<script src="https://unpkg.com/htmx.org@1.9.6" integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni" crossorigin="anonymous"></script>
 			<script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
 			<title>Juan Wu | Portfolio</title>
@@ -59,7 +60,7 @@ templ Index(d data.Page) {
 						</div>
 						<ul class="flex flex-col items-center justify-center gap-8 uppercase text-white lg:flex-row lg:gap-4">
 							<li>
-								<a href="#projects" class="relative z-0 p-2 after:absolute after:left-0 after:top-1/2 after:-z-10 after:h-3/4 after:w-0 after:-translate-y-1/2 after:bg-gradient-to-r after:from-purple-500 after:to-pink-500 after:transition-all hover:after:w-full focus:after:w-full">
+								<a href="#projects" class="relative z-0 p-2 after:absolute after:left-0 after:top-1/2 after:-z-10 after:h-3/4 after:w-0 after:-translate-y-1/2 after:bg-linear-to-r after:from-purple-500 after:to-pink-500 after:transition-all hover:after:w-full focus:after:w-full">
 									Projects
 								</a>
 							</li>
@@ -77,7 +78,7 @@ templ Index(d data.Page) {
 								</span>
 							</li>
 							<li>
-								<a href="https://linkedin.com/in/juancwu" class="relative z-0 p-2 after:absolute after:-left-2 after:top-1/2 after:-z-10 after:h-3/4 after:w-full after:bg-gradient-to-r after:from-sky-500 after:to-indigo-500 after:opacity-0 after:transition-all hover:after:left-0 hover:after:top-0 hover:after:translate-y-[15%] hover:after:opacity-100 focus:after:left-0 focus:after:top-0 focus:after:translate-y-[15%] focus:after:opacity-100">LinkedIn</a>
+								<a href="https://linkedin.com/in/juancwu" class="relative z-0 p-2 after:absolute after:-left-2 after:top-1/2 after:-z-10 after:h-3/4 after:w-full after:bg-linear-to-r after:from-sky-500 after:to-indigo-500 after:opacity-0 after:transition-all hover:after:left-0 hover:after:top-0 hover:after:translate-y-[15%] hover:after:opacity-100 focus:after:left-0 focus:after:top-0 focus:after:translate-y-[15%] focus:after:opacity-100">LinkedIn</a>
 							</li>
 						</ul>
 					</nav>
@@ -130,7 +131,7 @@ templ Index(d data.Page) {
 					<div class="flex flex-col items-center">
 						<h1 class="flex flex-col gap-2 p-8 text-3xl font-bold uppercase md:text-5xl">
 							<span class="relative text-xl font-medium text-zinc-300 md:text-2xl">Welcome to</span>
-							<span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:scale-90 before:bg-gradient-to-r before:from-purple-500 before:to-pink-500 before:opacity-60 before:transition-all hover:before:scale-100">
+							<span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:scale-90 before:bg-linear-to-r before:from-purple-500 before:to-pink-500 before:opacity-60 before:transition-all hover:before:scale-100">
 								<span class="group relative">Project Backyard </span>
 							</span>
 						</h1>
