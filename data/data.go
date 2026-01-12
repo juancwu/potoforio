@@ -23,6 +23,26 @@ func GetPageData() Page {
 	return Page{
 		Projects: []Project{
 			{
+				Name:        "Ccretdns",
+				URL:         "",
+				Description: "DNS tool to resolve private domain names and public domains using upstream servers.",
+				Repo:        "https://git.juancwu.dev/juancwu/ccretdns",
+				Classes:     "border-red-400",
+				TechList: []Tech{
+					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+				},
+			},
+			{
+				Name:        "Gosh",
+				URL:         "",
+				Description: "Context-aware, just-in-time SSH agent wrapper.",
+				Repo:        "https://git.juancwu.dev/juancwu/gosh",
+				Classes:     "border-green-400",
+				TechList: []Tech{
+					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+				},
+			},
+			{
 				Name:        "Budgit",
 				URL:         "",
 				Description: "Simple expense tracker with real-time grocery list.",
@@ -77,9 +97,9 @@ func GetPageData() Page {
 				Repo:        "https://github.com/juancwu/shoto",
 				Classes:     "border-indigo-500",
 				TechList: []Tech{
-					{TechName: "Next.js", TechURL: "https://nextjs.org/", TechClasses: "transition bg-zinc-950 text-zinc-100 hover:bg-zinc-100 hover:text-gray-950"},
-					{TechName: "Drizzle ORM", TechURL: "https://orm.drizzle.team/", TechClasses: "transition bg-zinc-950 text-zinc-100 hover:bg-green-600"},
-					{TechName: "Turso", TechURL: "https://turso.tech/", TechClasses: "transition bg-zinc-950 text-zinc-100 hover:bg-teal-600"},
+					{TechName: "Next.js", TechURL: "https://nextjs.org/", TechClasses: ""},
+					{TechName: "Drizzle ORM", TechURL: "https://orm.drizzle.team/", TechClasses: ""},
+					{TechName: "Turso", TechURL: "https://turso.tech/", TechClasses: ""},
 				},
 			},
 			{
@@ -89,9 +109,9 @@ func GetPageData() Page {
 				Repo:        "https://github.com/juancwu/potoforio",
 				Classes:     "border-gray-600",
 				TechList: []Tech{
-					{TechName: "Golang", TechURL: "https://go.dev/", TechClasses: "bg-zinc-950 text-zinc-100"},
-					{TechName: "HTMX", TechURL: "https://htmx.org/", TechClasses: "bg-zinc-950 text-zinc-100"},
-					{TechName: "Hyperscript", TechURL: "https://hyperscript.org/", TechClasses: "bg-zinc-950 text-zinc-100"},
+					{TechName: "Golang", TechURL: "https://go.dev/", TechClasses: ""},
+					{TechName: "HTMX", TechURL: "https://htmx.org/", TechClasses: ""},
+					{TechName: "Hyperscript", TechURL: "https://hyperscript.org/", TechClasses: ""},
 				},
 			},
 		},

@@ -22,7 +22,7 @@ func main() {
 		component.Render(r.Context(), w)
 	})
 
-	log.Println("Dev server starting on :8080 (Proxy to :9000 via Templ)")
+	log.Println("Dev server starting on :8080 (Proxy to :7331 via Templ)")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		log.Fatal(err)
 	}

@@ -83,6 +83,14 @@ templ Index(d data.Page) {
 							<li>
 								<a href="https://linkedin.com/in/juancwu" class="relative z-0 p-2 after:absolute after:-left-2 after:top-1/2 after:-z-10 after:h-3/4 after:w-full after:bg-linear-to-r after:from-sky-500 after:to-indigo-500 after:opacity-0 after:transition-all hover:after:left-0 hover:after:top-0 hover:after:translate-y-[15%] hover:after:opacity-100 focus:after:left-0 focus:after:top-0 focus:after:translate-y-[15%] focus:after:opacity-100">LinkedIn</a>
 							</li>
+							<li aria-hidden="true">
+								<span aria-hidden="true" class="hidden select-none font-normal text-fuchsia-400 lg:inline">
+									-
+								</span>
+							</li>
+							<li>
+								<a href="https://git.juancwu.dev/juancwu/" class="relative z-0 p-2 after:absolute after:right-0 after:top-1/2 after:-z-10 after:h-3/4 after:w-0 after:-translate-y-1/2 after:bg-linear-to-r after:from-orange-500 after:to-red-500 after:transition-all hover:after:w-full focus:after:w-full">Forgejo</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -136,8 +144,8 @@ templ Index(d data.Page) {
 								<span class="group relative">Project Backyard </span>
 							</span>
 						</h1>
-						<a href="https://github.com/juancwu" target="_blank" rel="noopener noreferrer" class="relative underline decoration-sky-400 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-0 after:bg-sky-500 after:transition-all hover:text-white hover:decoration-sky-500 hover:after:w-full focus:text-white focus:decoration-sky-500 focus:after:w-full">
-							Checkout my GitHub for more projects!
+						<a href="https://git.juancwu.dev/juancwu" target="_blank" rel="noopener noreferrer" class="relative underline decoration-sky-400 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-0 after:bg-sky-500 after:transition-all hover:text-white hover:decoration-sky-500 hover:after:w-full focus:text-white focus:decoration-sky-500 focus:after:w-full">
+							Checkout my Forgejo for more projects!
 						</a>
 					</div>
 				</div>
@@ -175,8 +183,7 @@ templ Index(d data.Page) {
 								<p>{ p.Description }</p>
 							</div>
 							<p>
-								Checkout the code in
-								<a href={ templ.SafeURL(p.Repo) } target="_blank" rel="noopener noreferrer" class="relative underline decoration-sky-400 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-0 after:bg-sky-500 after:transition-all hover:text-white hover:decoration-sky-500 hover:after:w-full focus:text-white focus:decoration-sky-500 focus:after:w-full">GitHub</a>
+								<a href={ templ.SafeURL(p.Repo) } target="_blank" rel="noopener noreferrer" class="relative underline decoration-sky-400 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-0 after:bg-sky-500 after:transition-all hover:text-white hover:decoration-sky-500 hover:after:w-full focus:text-white focus:decoration-sky-500 focus:after:w-full">View repository</a>
 							</p>
 						</div>
 					}
