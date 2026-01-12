@@ -26,7 +26,7 @@ tasks:
   templ:
     desc: Run templ with integrated server and hot reload
     cmds:
-      - go tool templ generate --watch --cmd="go run ./cmd/server/main.go" --proxy="http://localhost:9000" --open-browser=false
+      - go tool templ generate --watch --cmd="go run ./cmd/server/main.go" --proxy="http://localhost:8080" --open-browser=false
   tailwind-clean:
     desc: Clean tailwind output
     cmds:
