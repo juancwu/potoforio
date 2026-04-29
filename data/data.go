@@ -23,6 +23,56 @@ func GetPageData() Page {
 	return Page{
 		Projects: []Project{
 			{
+				Name:        "Splinter",
+				URL:         "",
+				Description: "Simple and minimal structured logger in Go with file rotation.",
+				Repo:        "https://git.juancwu.dev/juancwu/splinter",
+				Classes:     "border-yellow-400",
+				TechList: []Tech{
+					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+				},
+			},
+			{
+				Name:        "Errx",
+				URL:         "",
+				Description: "Go error library that builds readable breadcrumb chains as errors propagate.",
+				Repo:        "https://git.juancwu.dev/juancwu/errx",
+				Classes:     "border-pink-400",
+				TechList: []Tech{
+					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+				},
+			},
+			{
+				Name:        "Cubby",
+				URL:         "",
+				Description: "Tiny in-memory key-value cache shared between processes via a Unix socket.",
+				Repo:        "https://git.juancwu.dev/juancwu/cubby",
+				Classes:     "border-amber-400",
+				TechList: []Tech{
+					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+				},
+			},
+			{
+				Name:        "Ficha",
+				URL:         "",
+				Description: "Go library for opaque tokens with embedded permissions.",
+				Repo:        "https://git.juancwu.dev/juancwu/ficha",
+				Classes:     "border-rose-400",
+				TechList: []Tech{
+					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+				},
+			},
+			{
+				Name:        "Lightmux",
+				URL:         "",
+				Description: "Small wrapper around Go's net/http ServeMux with groups and middleware.",
+				Repo:        "https://git.juancwu.dev/juancwu/lightmux",
+				Classes:     "border-emerald-400",
+				TechList: []Tech{
+					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+				},
+			},
+			{
 				Name:        "Ccretdns",
 				URL:         "",
 				Description: "DNS tool to resolve private domain names and public domains using upstream servers.",
