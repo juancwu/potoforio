@@ -29,7 +29,7 @@ func GetPageData() Page {
 				Repo:        "https://git.juancwu.dev/juancwu/splinter",
 				Classes:     "border-zinc-600 hover:border-pink-400",
 				TechList: []Tech{
-					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+					{TechName: "Go", TechURL: "https://pkg.go.dev/git.juancwu.dev/juancwu/splinter", TechClasses: ""},
 				},
 			},
 			{
@@ -39,7 +39,7 @@ func GetPageData() Page {
 				Repo:        "https://git.juancwu.dev/juancwu/errx",
 				Classes:     "border-zinc-600 hover:border-pink-400",
 				TechList: []Tech{
-					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+					{TechName: "Go", TechURL: "https://pkg.go.dev/git.juancwu.dev/juancwu/errx", TechClasses: ""},
 				},
 			},
 			{
@@ -49,7 +49,7 @@ func GetPageData() Page {
 				Repo:        "https://git.juancwu.dev/juancwu/cubby",
 				Classes:     "border-zinc-600 hover:border-pink-400",
 				TechList: []Tech{
-					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+					{TechName: "Go", TechURL: "https://pkg.go.dev/git.juancwu.dev/juancwu/cubby", TechClasses: ""},
 				},
 			},
 			{
@@ -59,7 +59,7 @@ func GetPageData() Page {
 				Repo:        "https://git.juancwu.dev/juancwu/ficha",
 				Classes:     "border-zinc-600 hover:border-pink-400",
 				TechList: []Tech{
-					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+					{TechName: "Go", TechURL: "https://pkg.go.dev/git.juancwu.dev/juancwu/ficha", TechClasses: ""},
 				},
 			},
 			{
@@ -69,7 +69,7 @@ func GetPageData() Page {
 				Repo:        "https://git.juancwu.dev/juancwu/lightmux",
 				Classes:     "border-zinc-600 hover:border-pink-400",
 				TechList: []Tech{
-					{TechName: "Go", TechURL: "https://go.dev/", TechClasses: ""},
+					{TechName: "Go", TechURL: "https://pkg.go.dev/git.juancwu.dev/juancwu/lightmux", TechClasses: ""},
 				},
 			},
 			{
